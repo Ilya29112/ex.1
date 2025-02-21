@@ -5,7 +5,7 @@ function determineTriangleType($a, $b, $c) {
         return "Треугольник с такими сторонами не существует.";
     }
 
-    if ($a == $b && $b == $c) {
+    if ($a === $b && $b === $c) {
         return "Треугольник равносторонний.";
     }
 
@@ -27,4 +27,3 @@ $c = (float)trim(fgets(STDIN));
 
 $result = determineTriangleType($a, $b, $c);
 echo $result . "\n";
-?>
